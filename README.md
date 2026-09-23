@@ -11,7 +11,7 @@ Ansh AI is a production-ready, **Marathi-first** AI chatbot SaaS built in **pure
 | Backend | PHP 8.2+ (`declare(strict_types=1)`), PDO |
 | Database | MySQL 8+ (utf8mb4 for Devanagari) |
 | Frontend | HTML5, CSS3, vanilla JS, Tailwind (CDN), Lucide icons |
-| AI | Google Gemini via server-side cURL (`v1beta/generateContent`) |
+| AI | server-side cURL (`v1beta/generateContent`) |
 | Payments | PayU (hosted checkout, SHA-512 request/response hashing) |
 | Email | Native SMTP over `stream_socket_client` (STARTTLS/SSL/plain, AUTH LOGIN) |
 | Admin charts | Chart.js (CDN) |
