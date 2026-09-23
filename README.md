@@ -1,6 +1,6 @@
 # 🌿 Ansh AI — मराठी AI Chatbot SaaS
 
-Ansh AI is a production-ready, **Marathi-first** AI chatbot SaaS built in **pure PHP 8.2+ and MySQL 8+** — no frameworks, no Composer, no Node. It runs on ordinary shared/VPS PHP hosting. Real Google Gemini AI, real PayU payments, real native-PHP SMTP, and a full role-based admin panel where the whole business is configurable without touching code.
+Ansh AI is a production-ready, **Marathi-first** AI chatbot SaaS built in **pure PHP 8.2+ and MySQL 8+** — no frameworks, no Composer, no Node. It runs on ordinary shared/VPS PHP hosting. a full role-based admin panel where the whole business is configurable without touching code.
 
 ---
 
@@ -57,7 +57,6 @@ ansh-ai/
 │   ├── security.php          # rate_limit(), maintenance gate, security headers
 │   ├── auth.php              # User auth, sessions, freemium limits (Auth::)
 │   ├── admin-auth.php        # Admin auth + role→permission matrix (AdminAuth::)
-│   ├── gemini.php            # Server-side Gemini client (Gemini::)
 │   ├── payu.php              # PayU request build + response verification (PayU::)
 │   ├── mailer.php            # Native SMTP mailer + templates (Mailer::)
 │   ├── notifications.php     # In-app notifications / broadcast (Notify::)
@@ -201,8 +200,6 @@ All accept/return JSON, require CSRF (`X-CSRF-Token`), and enforce auth + rate l
 
 ## 6. Configuration Procedures (Admin Panel)
 
-**Gemini** → Admin → AI Settings: paste the API key (stored encrypted), pick the model (`gemini-1.5-flash` default), set temperature/max tokens/timeout and the Marathi system prompt. Use **Test Gemini** to verify. The key is **only** ever used server-side and is never exposed to the browser.
-
 **PayU** → Admin → Payment Settings: enter Merchant Key + Salt (encrypted), choose `test`/`production`. Prices are editable (`price_monthly`, `price_yearly`). The server builds the SHA-512 request hash and **verifies the SHA-512 response hash** before granting premium — frontend success is never trusted.
 
 **SMTP** → Admin → SMTP Settings: host, port, encryption (tls/ssl/none), username/password (encrypted), from name/email. Use **Test SMTP** to send a probe email. Templates are edited under Email Templates with `{{variable}}` placeholders.
@@ -235,7 +232,7 @@ All accept/return JSON, require CSRF (`X-CSRF-Token`), and enforce auth + rate l
 - [ ] Installer: fresh DB import, super-admin created, `config.php` written, re-visit is blocked (403)
 - [ ] Register → verify email → login → logout
 - [ ] Forgot password → reset link → new password works, old fails
-- [ ] Chat: send message, receive Gemini reply, history persists, rename/delete/regenerate
+- [ ] Chat: send message, receive Ansh AI reply, history persists, rename/delete/regenerate
 - [ ] Free limit: hit daily cap → limit message; premium user unrestricted
 - [ ] Categories & tools run with their seeded prompts
 - [ ] PayU (test env): checkout → return with valid hash grants premium; tampered hash rejected
@@ -252,4 +249,4 @@ All accept/return JSON, require CSRF (`X-CSRF-Token`), and enforce auth + rate l
 
 ## 9. License / Ownership
 
-This codebase is delivered for the project owner's use. Configure your own Gemini, PayU, and SMTP credentials before production. Keep `config/config.php` and `APP_KEY` secret and out of version control.
+This codebase is delivered for the project owner's use. Configure, PayU, and SMTP credentials before production. Keep `config/config.php` and `APP_KEY` secret and out of version control.
