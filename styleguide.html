@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="mr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ansh AI — Design System</title>
+<!-- Mirror of includes/theme.php (kept in sync manually for the static styleguide) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: {
+    brand:{50:'#eef9f4',100:'#d5f0e3',200:'#aee0c8',300:'#79caa5',400:'#3faf80',500:'#12936a',600:'#047857',700:'#02614a',800:'#064e3b',900:'#053a2c'},
+    gold:{50:'#fdf8ea',100:'#f8edc4',200:'#f0d886',300:'#e7c04f',400:'#dcac2c',500:'#d4a017',600:'#b3820f',700:'#8f6410',800:'#754f14',900:'#634317'},
+    surface:{DEFAULT:'#ffffff',muted:'#fbfaf7',sunken:'#f5f3ec'}, line:'#ece9e1'
+  },
+  fontFamily:{ sans:['"Plus Jakarta Sans"','"Noto Sans Devanagari"','system-ui','sans-serif'], display:['"Plus Jakarta Sans"','"Noto Sans Devanagari"','system-ui','sans-serif'] },
+  borderRadius:{ xl:'0.875rem','2xl':'1.125rem','3xl':'1.5rem','4xl':'2rem' }
+}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+<style> .sw-swatch{height:3.5rem;border-radius:.6rem;border:1px solid rgba(0,0,0,.06)} </style>
+</head>
+<body class="font-sans">
+<div class="max-w-5xl mx-auto px-5 py-10 space-y-14">
+
+  <!-- Header -->
+  <header>
+    <span class="eyebrow">Ansh AI · Design System</span>
+    <h1 class="mt-2 text-4xl font-extrabold tracking-tight">प्रीमियम <span class="text-gradient">मराठी AI</span> डिझाइन सिस्टीम</h1>
+    <p class="lead mt-3 max-w-2xl">Emerald + Gold ओळख, हलकी (light) थीम. ही पानं फक्त घटक (components) तपासण्यासाठी आहेत — प्रत्यक्ष ॲपमध्ये हेच टोकन्स वापरले जातात.</p>
+  </header>
+
+  <!-- Colors -->
+  <section class="space-y-4">
+    <h2 class="text-xl font-bold">रंग (Colors)</h2>
+    <div>
+      <p class="text-sm font-semibold text-gray-500 mb-2">Brand — deep emerald</p>
+      <div class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+        <div><div class="sw-swatch bg-brand-50"></div><p class="text-[10px] mt-1 text-center">50</p></div>
+        <div><div class="sw-swatch bg-brand-100"></div><p class="text-[10px] mt-1 text-center">100</p></div>
+        <div><div class="sw-swatch bg-brand-200"></div><p class="text-[10px] mt-1 text-center">200</p></div>
+        <div><div class="sw-swatch bg-brand-300"></div><p class="text-[10px] mt-1 text-center">300</p></div>
+        <div><div class="sw-swatch bg-brand-400"></div><p class="text-[10px] mt-1 text-center">400</p></div>
+        <div><div class="sw-swatch bg-brand-500"></div><p class="text-[10px] mt-1 text-center">500</p></div>
+        <div><div class="sw-swatch bg-brand-600 ring-2 ring-offset-2 ring-brand-600"></div><p class="text-[10px] mt-1 text-center font-bold">600★</p></div>
+        <div><div class="sw-swatch bg-brand-700"></div><p class="text-[10px] mt-1 text-center">700</p></div>
+        <div><div class="sw-swatch bg-brand-800"></div><p class="text-[10px] mt-1 text-center">800</p></div>
+        <div><div class="sw-swatch bg-brand-900"></div><p class="text-[10px] mt-1 text-center">900</p></div>
+      </div>
+    </div>
+    <div>
+      <p class="text-sm font-semibold text-gray-500 mb-2">Gold — accent (CTA / Pro)</p>
+      <div class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+        <div><div class="sw-swatch bg-gold-50"></div><p class="text-[10px] mt-1 text-center">50</p></div>
+        <div><div class="sw-swatch bg-gold-100"></div><p class="text-[10px] mt-1 text-center">100</p></div>
+        <div><div class="sw-swatch bg-gold-200"></div><p class="text-[10px] mt-1 text-center">200</p></div>
+        <div><div class="sw-swatch bg-gold-300"></div><p class="text-[10px] mt-1 text-center">300</p></div>
+        <div><div class="sw-swatch bg-gold-400"></div><p class="text-[10px] mt-1 text-center">400</p></div>
+        <div><div class="sw-swatch bg-gold-500 ring-2 ring-offset-2 ring-gold-500"></div><p class="text-[10px] mt-1 text-center font-bold">500★</p></div>
+        <div><div class="sw-swatch bg-gold-600"></div><p class="text-[10px] mt-1 text-center">600</p></div>
+        <div><div class="sw-swatch bg-gold-700"></div><p class="text-[10px] mt-1 text-center">700</p></div>
+        <div><div class="sw-swatch bg-gold-800"></div><p class="text-[10px] mt-1 text-center">800</p></div>
+        <div><div class="sw-swatch bg-gold-900"></div><p class="text-[10px] mt-1 text-center">900</p></div>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-3">
+      <div class="card card-pad"><div class="sw-swatch" style="background:#fbfaf7"></div><p class="text-xs mt-2 font-medium">surface.muted — app bg (ivory)</p></div>
+      <div class="brand-gradient rounded-2xl p-5 text-white"><p class="font-bold">brand-gradient</p><p class="text-sm text-white/80">hero / logo</p></div>
+      <div class="gold-gradient rounded-2xl p-5 text-white"><p class="font-bold">gold-gradient</p><p class="text-sm text-white/80">premium banner</p></div>
+    </div>
+  </section>
+
+  <!-- Typography -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">टायपोग्राफी (Typography)</h2>
+    <div class="card card-pad space-y-3">
+      <p class="eyebrow">Eyebrow · लेबल</p>
+      <h1 class="text-4xl font-extrabold tracking-tight">मराठीत विचारा, मराठीत उत्तर — Ansh AI 2026</h1>
+      <h2 class="text-2xl font-bold">Heading 2 · मथळा — 1234567890</h2>
+      <h3 class="text-lg font-bold">Heading 3 · उपमथळा</h3>
+      <p class="lead">Lead paragraph — शिक्षण, शेती, आरोग्य, लेखन आणि रोजच्या कामांसाठी तुमचा विश्वासू मराठी AI साथी.</p>
+      <p class="text-gray-600">Body — देवनागरी मजकूर मोबाइलवरही सुवाच्य दिसतो. The Latin text and numerals (like Ansh AI, 2026, ₹499) use Plus Jakarta Sans for a crisp, premium feel while Marathi renders in Noto Sans Devanagari.</p>
+      <p class="text-sm text-gray-500">Small / muted — दुय्यम माहिती व मदतीचा मजकूर.</p>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">बटणे (Buttons)</h2>
+    <div class="card card-pad flex flex-wrap gap-3 items-center">
+      <button class="btn btn-primary"><i data-lucide="sparkles"></i> Primary</button>
+      <button class="btn btn-gold"><i data-lucide="crown"></i> Pro मिळवा</button>
+      <button class="btn btn-secondary"><i data-lucide="settings"></i> Secondary</button>
+      <button class="btn btn-ghost">Ghost</button>
+      <button class="btn btn-danger"><i data-lucide="trash-2"></i> हटवा</button>
+      <button class="btn btn-danger-soft">Danger soft</button>
+      <button class="btn btn-primary" disabled>Disabled</button>
+      <button class="btn btn-primary is-loading">Loading</button>
+    </div>
+    <div class="card card-pad flex flex-wrap gap-3 items-center">
+      <button class="btn btn-primary btn-sm">Small</button>
+      <button class="btn btn-primary">Default</button>
+      <button class="btn btn-primary btn-lg">Large CTA</button>
+      <button class="btn btn-secondary btn-icon"><i data-lucide="heart"></i></button>
+      <div class="w-full sm:w-64"><button class="btn btn-primary btn-block"><i data-lucide="log-in"></i> Block button</button></div>
+    </div>
+  </section>
+
+  <!-- Forms -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">फॉर्म घटक (Forms)</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="card card-pad">
+        <div class="field">
+          <label class="label" for="f1">ईमेल <span class="req">*</span></label>
+          <div class="input-group">
+            <i data-lucide="mail"></i>
+            <input id="f1" class="input" type="email" placeholder="you@example.com">
+          </div>
+          <p class="help">आम्ही तुमचा ईमेल कधीही शेअर करणार नाही.</p>
+        </div>
+        <div class="field">
+          <label class="label" for="f2">पासवर्ड</label>
+          <div class="input-group">
+            <i data-lucide="lock"></i>
+            <input id="f2" class="input" type="password" value="secret123">
+            <button class="input-trailing" type="button"><i data-lucide="eye"></i></button>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="f3">चुकीचे फील्ड</label>
+          <input id="f3" class="input is-error" value="चुकीचा इनपुट">
+          <p class="field-error"><i data-lucide="alert-circle"></i> हे फील्ड आवश्यक आहे.</p>
+        </div>
+      </div>
+      <div class="card card-pad">
+        <div class="field">
+          <label class="label" for="f4">योजना निवडा</label>
+          <select id="f4" class="select"><option>Free</option><option>Pro — मासिक</option><option>Pro — वार्षिक</option></select>
+        </div>
+        <div class="field">
+          <label class="label" for="f5">संदेश</label>
+          <textarea id="f5" class="textarea" placeholder="तुमचा प्रश्न लिहा..."></textarea>
+        </div>
+        <label class="flex items-center gap-2.5 mb-3 text-sm text-gray-700"><input type="checkbox" class="checkbox" checked> अटी व गोपनीयता धोरण स्वीकारतो</label>
+        <label class="flex items-center gap-2.5 mb-3 text-sm text-gray-700"><input type="radio" name="r" class="radio" checked> मासिक</label>
+        <label class="flex items-center gap-2.5 mb-3 text-sm text-gray-700"><input type="radio" name="r" class="radio"> वार्षिक</label>
+        <label class="flex items-center gap-2.5 text-sm text-gray-700"><input type="checkbox" class="switch" checked> ईमेल सूचना चालू</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badges & Alerts -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">बॅज व सूचना (Badges & Alerts)</h2>
+    <div class="card card-pad flex flex-wrap gap-2 items-center">
+      <span class="badge badge-brand"><i data-lucide="check"></i> Active</span>
+      <span class="badge badge-gold"><i data-lucide="crown"></i> Pro</span>
+      <span class="badge badge-gray">Draft</span>
+      <span class="badge badge-green badge-dot">यशस्वी</span>
+      <span class="badge badge-red badge-dot">अयशस्वी</span>
+      <span class="badge badge-amber badge-dot">प्रलंबित</span>
+      <span class="badge badge-blue">माहिती</span>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="alert alert-success"><i data-lucide="check-circle"></i><div><p class="alert-title">यशस्वी!</p><p>तुमचे बदल जतन झाले आहेत.</p></div></div>
+      <div class="alert alert-error"><i data-lucide="alert-circle"></i><div><p class="alert-title">त्रुटी</p><p>ईमेल पाठवता आला नाही. पुन्हा प्रयत्न करा.</p></div></div>
+      <div class="alert alert-warning"><i data-lucide="alert-triangle"></i><div><p class="alert-title">सूचना</p><p>तुमचे सदस्यत्व ३ दिवसांत संपेल.</p></div></div>
+      <div class="alert alert-info"><i data-lucide="info"></i><div><p class="alert-title">माहिती</p><p>नवीन AI साधने आता उपलब्ध आहेत.</p></div></div>
+    </div>
+  </section>
+
+  <!-- Cards / Feature tiles -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">कार्ड्स (Cards)</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="card card-pad card-hover"><span class="tile"><i data-lucide="graduation-cap"></i></span><p class="card-title mt-3">शिक्षण</p><p class="card-sub mt-1">अभ्यास, निबंध व शंका सोडवा.</p></div>
+      <div class="card card-pad card-hover"><span class="tile"><i data-lucide="sprout"></i></span><p class="card-title mt-3">शेती</p><p class="card-sub mt-1">पीक, हवामान व बाजारभाव.</p></div>
+      <div class="card card-pad card-hover"><span class="tile tile-gold"><i data-lucide="crown"></i></span><p class="card-title mt-3">Pro साधने</p><p class="card-sub mt-1">प्रगत सुविधा अनलॉक करा.</p></div>
+    </div>
+  </section>
+
+  <!-- Chat -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">चॅट (Chat)</h2>
+    <div class="card card-pad space-y-4 mesh-bg">
+      <div class="flex justify-end"><div class="bubble-user px-4 py-2.5 max-w-[80%]">मला मराठीत एक छोटी कविता लिहून दे.</div></div>
+      <div class="flex justify-start"><div class="bubble-ai px-4 py-3 max-w-[85%] ai-content">
+        <p>नक्की! ही घ्या एक छोटी कविता:</p>
+        <blockquote>पावसाच्या सरींनी<br>भिजली हिरवी राने</blockquote>
+        <p>कोड उदाहरण:</p>
+        <div class="code-block"><button class="copy-code">कॉपी</button><pre>print("नमस्कार")</pre></div>
+      </div></div>
+      <div class="flex justify-start"><div class="bubble-ai px-4 py-3"><span class="typing"><span></span><span></span><span></span></span></div></div>
+    </div>
+  </section>
+
+  <!-- Table + Empty + Loading -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">टेबल, रिकामी व लोडिंग स्थिती</h2>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>वापरकर्ता</th><th>योजना</th><th>स्थिती</th><th>रक्कम</th></tr></thead>
+        <tbody>
+          <tr><td class="td-strong">सागर पाटील</td><td>Pro मासिक</td><td><span class="badge badge-green badge-dot">सक्रिय</span></td><td class="tabular-nums">₹499</td></tr>
+          <tr><td class="td-strong">प्रिया देशमुख</td><td>Free</td><td><span class="badge badge-gray">—</span></td><td class="tabular-nums">₹0</td></tr>
+          <tr><td class="td-strong">राहुल जोशी</td><td>Pro वार्षिक</td><td><span class="badge badge-amber badge-dot">प्रलंबित</span></td><td class="tabular-nums">₹4,999</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="card">
+        <div class="empty">
+          <span class="empty-icon"><i data-lucide="inbox"></i></span>
+          <p class="empty-title">अजून काही नाही</p>
+          <p class="empty-text">तुम्ही अजून कोणतेही संभाषण सुरू केलेले नाही. खाली बटणावर क्लिक करून सुरुवात करा.</p>
+          <button class="btn btn-primary btn-sm mt-4"><i data-lucide="plus"></i> नवीन संभाषण</button>
+        </div>
+      </div>
+      <div class="card card-pad space-y-3">
+        <div class="flex items-center gap-3"><div class="skeleton skeleton-circle w-10 h-10"></div><div class="flex-1 space-y-2"><div class="skeleton skeleton-text w-1/2"></div><div class="skeleton skeleton-text w-3/4"></div></div></div>
+        <div class="skeleton skeleton-text w-full"></div>
+        <div class="skeleton skeleton-text w-5/6"></div>
+        <div class="flex items-center gap-3 pt-2"><div class="spinner"></div><span class="text-sm text-gray-500">लोड होत आहे…</span><div class="spinner spinner-lg"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chips -->
+  <section class="space-y-3">
+    <h2 class="text-xl font-bold">सूचना चिप्स (Chips)</h2>
+    <div class="flex flex-wrap gap-2.5">
+      <button class="chip"><i data-lucide="pen-line" class="w-4 h-4"></i> निबंध लिही</button>
+      <button class="chip"><i data-lucide="languages" class="w-4 h-4"></i> भाषांतर कर</button>
+      <button class="chip"><i data-lucide="lightbulb" class="w-4 h-4"></i> कल्पना दे</button>
+      <button class="chip"><i data-lucide="calculator" class="w-4 h-4"></i> गणित सोडव</button>
+    </div>
+  </section>
+
+</div>
+<script>window.addEventListener('DOMContentLoaded',()=>window.lucide&&lucide.createIcons());</script>
+</body>
+</html>

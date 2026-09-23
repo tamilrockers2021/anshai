@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /$
+Allow: /index.php
+Allow: /onboarding.php
+Allow: /login.php
+Allow: /register.php
+Allow: /privacy.php
+Allow: /terms.php
+
+# Keep private / authenticated areas out of the index.
+Disallow: /admin/
+Disallow: /api/
+Disallow: /chat.php
+Disallow: /history.php
+Disallow: /profile.php
+Disallow: /settings.php
+Disallow: /premium.php
+Disallow: /payment-result.php
+Disallow: /verify-email.php
+Disallow: /reset-password.php
+Disallow: /forgot-password.php
+Disallow: /config/
+Disallow: /includes/
+Disallow: /storage/
+Disallow: /uploads/
+Disallow: /cron/
