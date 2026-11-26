@@ -1,4 +1,4 @@
-# 🌿 Ansh AI — मराठी AI Chatbot SaaS
+# 🌿 Ansh AI — First मराठी AI Chatbot SaaS
 
 Ansh AI is a production-ready, **Marathi-first** AI chatbot SaaS built in **pure PHP 8.2+ and MySQL 8+** — no frameworks, no Composer, no Node. It runs on ordinary shared/VPS PHP hosting. a full role-based admin panel where the whole business is configurable without touching code.
 
